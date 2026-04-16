@@ -24,17 +24,17 @@ The application will be installed in the "app" directory.
 ### Built-in PHP Test Web Server
 
 The built-in PHP Test Web Server can be used to immediately start developing and testing a PRADO web application.
-The web server is started with command (assuming the above application in the directory "app"):
+The web server is started with command (assuming the above application in the "app" directory):
 ```sh
-cd app/protected
-./vendor/bin/prado-cli http
+cd app
+composer webserver
 ```
 
 The application is then accessible on the machine's browser at `http://127.0.0.1:8080/`.  The built-in web server is enabled when the application is in "Debug" mode or is enabled in the application configuration parameters.
 
 ## PRADO Composer Extensions
 
-PRADO 4.2 supports Composer extensions to plug in new functionality directly into a PRADO application; such as new web controls, API integration, authorization, new services, analytics, custom behaviors, and CLI commands.  3rd party extensions can be found at [Packagist - Prado4-Extensions](https://packagist.org/?query=prado4&type=prado4-extension).
+As of version 4.2, PRADO supports Composer extensions to plug new functionality directly into a PRADO application; such as new web controls, API integration, authorization, services, analytics, custom behaviors, and CLI commands.  3rd party extensions can be found at [Packagist - Prado4-Extensions](https://packagist.org/?query=prado4&type=prado4-extension).
 
 The example PRADO Composer extension has its own manifest, Module, web page, and error messages.  It can be included in the application with the following command:
 ```sh
