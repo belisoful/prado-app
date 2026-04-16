@@ -33,6 +33,9 @@
 			"chmod 777 assets",
 			"chmod 777 protected/runtime",
 			"chmod 777 protected/vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer"
+		],
+		"webserver": [
+			"protected/vendor/bin/prado-cli http"
 		]
 	}
 }
